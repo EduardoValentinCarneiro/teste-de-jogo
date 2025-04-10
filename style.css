@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #e5e5e5;
+    color: #333;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2rem;
+  }
+  
+  .galeria-jogos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .jogo-item {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .jogo-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .jogo-item img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .jogo-item p {
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .botao-voltar {
+    display: block;
+    width: fit-content;
+    margin: 40px auto;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .botao-voltar:hover {
+    background-color: #0056b3;
+  }
+  
+  .jogo-body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .jogo-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #222;
+    color: white;
+  }
+  
+  .jogo-topo h2 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .botao-fullscreen {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .botao-fullscreen:hover {
+    background-color: #1f8e3e;
+  }
+  
+  iframe {
+    flex-grow: 1;
+    border: none;
+    width: 100%;
+    height: 100%;
+  }
+  
